@@ -11,7 +11,6 @@ header {
     margin: 0%;
     text-indent: 1%;
 }
-
 /* Footer for all web pages */
 footer {
     background-color: #737480;
@@ -22,13 +21,11 @@ footer {
     position: fixed;
     font-size: 20px;
 }
-
 /* Images */
 img {
     width: 30px;
     height: 30px;
 }
-
 /* Navigation */
 nav a {
     text-align: right;
@@ -38,7 +35,6 @@ nav a {
     top: 1%;
     font-size: 20px;
 }
-
 /* Headings */
 h1 {
     font-size: 30px;
@@ -46,7 +42,6 @@ h1 {
     position: fixed;
     left: 5%;
 }
-
 /* Admin and Customer table Id */
 #menu {
     top: 20%;
@@ -55,68 +50,29 @@ h1 {
     border: 0px solid #fcfcfc;
     width: 38%;
 }
-
-/* Table data Id name in cart webpage */
-#total {
-    top: 33%;
-    left: 15.5%;
-    position: fixed;
-    font-weight: bold;
-}
-
-/* Table data Id name in cart webpage */
-#rupee {
-    top: 33%;
-    left: 22.5%;
-    position: fixed;
-    font-weight: bold;
-}
-
-/* Table data Id name in cart empty webpage */
-#total1 {
-    top: 31%;
-    left: 15.5%;
-    position: fixed;
-    font-weight: bold;
-}
-
-/* Table data Id name in cart empty webpage */
-#rupee1 {
-    top: 31%;
-    left: 22.5%;
-    position: fixed;
-    font-weight: bold;
-}
-
 /* Anchor link Id for cart */
 #cart {
     margin-left: 90%;
 }
-
 /* Edit menu table Id */
 #edit-menu {
     top: 20%;
     position: fixed;
     left: 5%;
 }
-
 /* Edit menu table Id 2 */
 #menu2 {
     top: 26%;
     position: fixed;
     left: 5%;
 }
-
 /* Edit menu label Id */
 #edit-menu label {
     color: #55595e;
-}
-
-/* Edit Menu 2 label Id */
+} /* Edit Menu 2 label Id */
 #menu2 label {
     color: #55595e;
 }
-
 /* Save button in edit menu webpage */
 #button1 {
     width: 5%;
@@ -125,7 +81,6 @@ h1 {
     background-color: #2a5587;
     color: #fcfcfc;
 }
-
 /* P tag in edit menu item status webpage */
 p {
     color: #37bf7b;
@@ -133,7 +88,6 @@ p {
     position: fixed;
     left: 5%;
 }
-
 /* P tag Id name in customer notification webpage */
 #item {
     left: 20%;
@@ -146,13 +100,11 @@ p {
     left: 5%;
     width: 45%;
 }
-
 /* P tag Id name in cart empty webpage */
 #menu-item {
     color: #737480;
     font-size: 19px;
 }
-
 /* Table Id name in cart webpage */
 #menu1 {
     width: 30%;
@@ -160,7 +112,6 @@ p {
     position: fixed;
     left: 5%;
 }
-
 /* P tag Id name in cart notification webpage */
 #remove-cart {
     top: 15%;
@@ -169,21 +120,27 @@ p {
     left: 12%;
     font-size: 19px;
 }
-
 /* Anchor Id name for Delete */
 #cart-link {
     color: #000000;
 }
-
 /* Anchor tag Id name in cart empty webpage */
 #menu-item a {
     color: #1a83c4;
     font-size: 19px;
 }
-
 /* B tag id in customer notification webpage */
 #customer-notification {
     font-size: 22px;
     left: 20%;
     position: fixed;
+}
+/* menu item list customer and cart jsp page */
+#cart-status {
+    top: 6%;
+    left: 3.3%;
+    position: fixed;
+    font-family: Arial, sans-serif;
+    color: #37bf7b;
+    left: 5%;
 }

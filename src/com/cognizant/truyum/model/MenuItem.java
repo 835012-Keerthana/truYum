@@ -10,6 +10,7 @@ public class MenuItem {
     private boolean active;
     private Date dateOfLaunch;
     private String category;
+    public boolean freeDelivery;
 
     public MenuItem() {
         // TODO Auto-generated constructor stub
@@ -82,8 +83,6 @@ public class MenuItem {
     public void setFreeDelivery(boolean freeDelivery) {
         this.freeDelivery = freeDelivery;
     }
-
-    private boolean freeDelivery;
 
     @Override
     public int hashCode() {

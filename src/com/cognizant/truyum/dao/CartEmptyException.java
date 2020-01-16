@@ -1,7 +1,7 @@
 package com.cognizant.truyum.dao;
 
 //Custom Exception(User Defined Exception)
-public class CartEmptyException extends Exception{
+public class CartEmptyException extends Exception {
 
     /**
      * 

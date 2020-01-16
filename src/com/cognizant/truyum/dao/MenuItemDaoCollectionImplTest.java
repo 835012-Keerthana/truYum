@@ -49,7 +49,7 @@ public class MenuItemDaoCollectionImplTest {
         System.out.printf("%-10s%-20s%-10s%-10s%-20s%-20s%s\n", "Id", "Name", "Price", "Active",
                 "Date of Launch", "Category", "Free Delivery");
         MenuItem menuitem = menudao.getMenuItem(3);
-        System.out.println(menuitem );
+        System.out.println(menuitem);
 
     }
 }
