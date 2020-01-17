@@ -1,19 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="f"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="f"%>
 <html>
 <head>
 <title>Edit Menu Page</title>
-<script type="text/javascript" src="js\script.js">
+<script type="text/javascript" src="js/script.js">
     
 </script>
 </head>
-<link rel="stylesheet" type="text/css" href="styles\style.css" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" />
 <link rel="icon" href="images\truyum-logo-dark.png" />
 <body>
     <c:set var="menuItem" value="${menuItem}"></c:set>
-    <header> truYum <img src="images\truyum-logo-light.png" hspace="10"> <nav>
+    <header> truYum <img src="images/truyum-logo-light.png" hspace="10"></img> <nav>
     <a href="ShowMenuItemListAdmin">Menu</a> </nav> </header>
     <h1>Edit Menu Items</h1>
     <form name="menuItemForm" action="EditMenuItem" autocomplete="off"
@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <td><input type="text" id="name" name="name" value="${menuItem.getName()}"
-                    size="74" placeholder="Sandwich"></td>
+                    size="74" placeholder="Sandwich" /></td>
             </tr>
         </table>
         <table id="menu2">
@@ -36,7 +36,7 @@
                 <td><label for="category"><b>Category</b></label></td>
             </tr>
             <tr>
-                <td><input type="text" id="price" name="price" value="${menuItem.getPrice()}"></td>
+                <td><input type="text" id="price" name="price" value="${menuItem.getPrice()}" /></td>
                 <td><c:choose>
                         <c:when test="${menuItem.isActive()==true}">
                             <input type="radio" value="Yes" name="active" checked="checked" />Yes
@@ -48,8 +48,8 @@
                         </c:otherwise>
                     </c:choose></td>
                 <td><f:formatDate value="${menuItem.getDateOfLaunch()}" var="dateOfLaunch"
-                        pattern="dd/MM/yyyy" /> <input type="textbox" id="dateOfLaunch"
-                    value="${dateOfLaunch}" name="dateOfLaunch" placeholder="22/04/2022"></td>
+                        pattern="dd/MM/yyyy"></f:formatDate> <input type="textbox" id="dateOfLaunch"
+                    value="${dateOfLaunch}" name="dateOfLaunch" placeholder="22/04/2022" /></td>
                 <td><select name="category" id="category">
                         <option value="${menuItem.getCategory()}">${menuItem.getCategory()}</option>
                         <option value="MainCourse" id="category">Main Course</option>
@@ -70,7 +70,7 @@
                     </c:choose> <label for="freeDelivery"><b>Free Delivery</b></label></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Save" id="button1"></td>
+                <td><input type="submit" value="Save" id="button1" /></td>
             </tr>
         </table>
     </form>
