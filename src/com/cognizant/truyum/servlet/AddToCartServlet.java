@@ -28,7 +28,5 @@ public class AddToCartServlet extends HttpServlet {
         request.setAttribute("addCartStatus", true);
         request.setAttribute("menuItem", menuItemList);
         request.getRequestDispatcher("menu-item-list-customer.jsp").forward(request, response);
-
     }
-
 }

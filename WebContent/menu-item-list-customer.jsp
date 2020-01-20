@@ -24,7 +24,6 @@
             <th>Category</th>
             <th>Action</th>
         </tr>
-
         <c:forEach items="${menuItem}" var="menuItem">
             <tr>
                 <td>${menuItem.getName()}</td>
@@ -34,10 +33,7 @@
                     </c:choose></td>
                 <td align="right"><f:formatNumber type="currency" currencySymbol="Rs."
                         minFractionDigits="2" value="${menuItem.getPrice()}"></f:formatNumber></td>
-
-
                 <td align="center">${menuItem.getCategory()}</td>
-
                 <td align="center"><a href="AddToCart?menuItemId=${menuItem.getId()}"
                     id="cart-link">Add To Cart</a></td>
             </tr>

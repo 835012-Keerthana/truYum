@@ -22,7 +22,6 @@
         <col width="200px" />
         <col width="100px" />
         <col width="100px" />
-
         <tr>
             <th align="left">Name</th>
             <th align="left">Free Delivery</th>

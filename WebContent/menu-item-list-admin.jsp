@@ -27,12 +27,11 @@
             <tr>
                 <td>${menuItem.getName()}</td>
                 <td align="right"><f:formatNumber type="currency" currencySymbol="Rs."
-                        minFractionDigits="2" value="${menuItem.getPrice()}"></f:formatNumber></td>
+                        minFractionDigits="0" groupingUsed="true" value="${menuItem.getPrice()}"></f:formatNumber></td>
                 <td align="center"><c:choose>
                         <c:when test="${menuItem.isActive()==true}">Yes</c:when>
                         <c:otherwise>No</c:otherwise>
                     </c:choose></td>
-
                 <td align="center"><f:formatDate value="${menuItem.getDateOfLaunch()}"
                         pattern="dd/MM/yyyy"></f:formatDate></td>
                 <td align="center">${menuItem.getCategory()}</td>

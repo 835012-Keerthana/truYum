@@ -2,13 +2,11 @@ package com.cognizant.truyum.servlet;
 
 import java.io.IOException;
 import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import com.cognizant.truyum.dao.CartDao;
 import com.cognizant.truyum.dao.CartDaoCollectionImpl;
 import com.cognizant.truyum.dao.CartEmptyException;
@@ -34,12 +32,8 @@ public class ShowCartServlet extends HttpServlet {
             request.setAttribute("menuItem", menuItemList);
             request.setAttribute("cart", cart);
             request.getRequestDispatcher("cart.jsp").forward(request, response);
-
         } catch (CartEmptyException e) {
             request.getRequestDispatcher("cart-empty.jsp").forward(request, response);
-
         }
-
     }
-
 }

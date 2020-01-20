@@ -6,7 +6,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import com.cognizant.truyum.dao.MenuItemDao;
 import com.cognizant.truyum.dao.MenuItemDaoCollectionImpl;
 import com.cognizant.truyum.model.MenuItem;
@@ -22,7 +21,5 @@ public class ShowEditMenuItemServlet extends HttpServlet {
         MenuItem menuItem = menuItemDao.getMenuItem(menuItemId);
         request.setAttribute("menuItem", menuItem);// it has only one menu item
         request.getRequestDispatcher("edit-menu-item.jsp").forward(request, response);
-
     }
-
 }

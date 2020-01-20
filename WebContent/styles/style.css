@@ -112,14 +112,6 @@ p {
     position: fixed;
     left: 5%;
 }
-/* P tag Id name in cart notification webpage */
-#remove-cart {
-    top: 15%;
-    text-align: center;
-    position: fixed;
-    left: 12%;
-    font-size: 19px;
-}
 /* Anchor Id name for Delete */
 #cart-link {
     color: #000000;
@@ -129,15 +121,9 @@ p {
     color: #1a83c4;
     font-size: 19px;
 }
-/* B tag id in customer notification webpage */
-#customer-notification {
-    font-size: 22px;
-    left: 20%;
-    position: fixed;
-}
 /* menu item list customer and cart jsp page */
 #cart-status {
-    top: 6%;
+    top: 15%;
     left: 3.3%;
     position: fixed;
     font-family: Arial, sans-serif;

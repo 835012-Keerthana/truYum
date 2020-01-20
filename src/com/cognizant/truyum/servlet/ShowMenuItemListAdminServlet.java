@@ -7,7 +7,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import com.cognizant.truyum.dao.MenuItemDao;
 import com.cognizant.truyum.dao.MenuItemDaoCollectionImpl;
 import com.cognizant.truyum.model.MenuItem;
@@ -23,5 +22,4 @@ public class ShowMenuItemListAdminServlet extends HttpServlet {
         request.setAttribute("menuItem", menuItemList);
         request.getRequestDispatcher("menu-item-list-admin.jsp").forward(request, response);
     }
-
 }

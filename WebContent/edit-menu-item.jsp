@@ -5,9 +5,7 @@
 <html>
 <head>
 <title>Edit Menu Page</title>
-<script type="text/javascript" src="js/script.js">
-    
-</script>
+<script type="text/javascript" src="js/script.js"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
 <link rel="icon" href="images\truyum-logo-dark.png" />
